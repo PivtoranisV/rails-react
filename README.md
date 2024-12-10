@@ -41,6 +41,11 @@ Visit <http://localhost:3000> to see the default Rails welcome page, confirming 
 
 5. **Install React dependencies**
 
+> [!WARNING]
+> You may get the error `ActionView::Template::Error (The asset ‘application.js’ is not present in the asset pipeline.`
+>
+> The error occurs because the assets were not compiled in development mode, `bin/rails assets:precompile`
+  
 ```bash
 yarn add react react-dom react-router-dom
 ```
